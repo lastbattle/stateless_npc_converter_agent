@@ -1,10 +1,13 @@
-# Converting State-Based MapleStory NPC Scripts to Stateless Using MCP with Cline or Github Copilot
+# Converting State-Based MapleStory NPC Scripts to Stateless Using Agent with Cline or Github Copilot
 
-This guide outlines the process for converting state-based MapleStory NPC scripts to stateless scripts using Model Context Protocol (MCP) tools like Cline in Github Copilot or Cursor. It includes steps for generating documentation for key Java classes and leveraging AI prompts for automated conversion.
+This guide outlines the process for converting state-based MapleStory NPC scripts to stateless scripts using Agents in Cline in Github Copilot, via Cursor / Visual Studio Code IDE. It includes steps for generating documentation for key Java classes and leveraging AI prompts for automated conversion.
+
+<img width="1776" height="1253" alt="image" src="https://github.com/user-attachments/assets/3d746be9-4580-4ac2-9df1-cdf6b0e25c37" />
+
 
 ## Prerequisites
 - **Development Environment**: Visual Studio Code or Cursor installed.
-- **Cline Extension**: Installed in your IDE with MCP server support configured. (Cline / Github Copilot)
+- **Cline Extension**: Installed in your IDE with Agent mode enabled. (Cline / Github Copilot)
 - **MapleStory Source**: Access to a MapleStory server source (e.g., OdinMS-based) with NPC scripts in the `scripts/` directory.
 
 ## Step-by-Step Guide
@@ -78,7 +81,7 @@ Use Visual Studio Code or Cursor with the Cline extension or Github Copilot (Age
    - Launch Visual Studio Code or Cursor.
    - Copy to the `scripts/` folder containing your MapleStory NPC scripts.
 
-2. **Configure Cline and MCP**:
+2. **Configure Cline and **:
    - Ensure the Cline extension is installed in your IDE. (Install)[https://cline.bot/]
    - AI models like `google/gemini-2.5-pro` is greatly recommended, whereas `google/gemini-2.5-flash` for cost efficiency.  You will require an API key for this. 
 
