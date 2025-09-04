@@ -1,0 +1,48 @@
+NPC script doc :
+
+#b = Blue color text
+#c[itemid]# Shows how many [itemid] the player has in their inventory.
+#d = Purple text.
+#e = Bold
+#f[imagelocation]# - Shows an image inside the .wz files
+#g = Green text.
+#h # - Shows the name of the player.
+#i<Itemid># = Shows item image
+#k = Black color text
+#l - Selection close.
+#m[mapid]# - Shows the name of the map.
+#n = Normal text (removes bold).
+#o[mobid]# - Shows the name of the mob.
+#p[npcid]# - Shows the name of the NPC.
+#q[skillid]# - Shows the name of the skill.
+#r = Red text.
+#s[skillid]# - Shows the image of the skill.
+#t<Itemid># = Shows item image
+#h0# = Shows character name
+#v[itemid]# - Shows a picture of the item.
+#x - Returns "0%" (need more information on this).
+#z[itemid]# - Shows the name of the item.
+
+#B[%]# - Shows a 'progress' bar.
+#F[imagelocation]# - Shows an image inside the .wz files.
+#L[number]# Selection open.
+#R[Quest Id]# infoNumber count 
+\r\n - Moves down a line.
+\r = Return Carriage
+\n = New Line
+\t = Tab (4 spaces) 
+\b = Backwards
+
+#f<Image Path># = Show image path in Wz (Example : #fUI/UIWindow.img/QuestIcon/4/0#)
+>> #fUI/UIWindow.img/QuestIcon/0/0# = Quest Available
+>> #fUI/UIWindow.img/QuestIcon/1/0# = Quest Started
+>> #fUI/UIWindow.img/QuestIcon/10/0# = Evan SP
+>> #fUI/UIWindow.img/QuestIcon/2/0# = Quest completed
+>> #fUI/UIWindow.img/QuestIcon/3/0# = Select item
+>> #fUI/UIWindow.img/QuestIcon/4/0# = Reward item
+>> #fUI/UIWindow.img/QuestIcon/5/0# = Unknown Item
+>> #fUI/UIWindow.img/QuestIcon/6/0# = Fame
+>> #fUI/UIWindow.img/QuestIcon/7/0# = Meso
+>> #fUI/UIWindow.img/QuestIcon/8/0# = EXP
+>> #fUI/UIWindow.img/QuestIcon/9/0# = Closeness
+>> #fMob/0100100.img/stand/0# = Mob image
