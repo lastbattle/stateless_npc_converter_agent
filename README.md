@@ -19,20 +19,22 @@ This documentation should be stored in a `scripts/_doc` directory in Markdown fo
    - Create a subdirectory named `_doc` (i.e., `scripts/_doc`).
 
 2. **Paste the following classes to an existing AI-chat interface:**:
-Use the prompt under `prompts/documentation_prompt.md`
+Using the prompt under `prompts/documentation_prompt.md`
    - `AbstractPlayerInteraction.java`
    - `NPCConversationManager.java`
    - `StatelessNPCConversationInterface.java`
    - `StatelessNPCConversationManager.java`
 
+   Paste the prompts into any AI chat interface, [Grok](https://grok.com/) [Google Gemini](https://gemini.google.com/app) [ChatGPT](https://chatgpt.com/)
 
 3. **Documentation Format**:
-Paste the documentation generated into `scripts/AbstractPlayerInteraction.md`, `scripts/NPCConversationManager.md`, `StatelessNPCConversationInterface.md`, `StatelessNPCConversationManager.md`.
 
-   Each Markdown file should follow this structure:
-   - **Class Name**: The name of the Java class.
-   - **Description**: A brief overview of the class's purpose.
-   - **Functions**: A table listing function names, descriptions, parameters, and return types.
+   Replace the documentation generated into `scripts/AbstractPlayerInteraction.md`, `scripts/NPCConversationManager.md`, `StatelessNPCConversationInterface.md`, `StatelessNPCConversationManager.md` under `scripts/_docs`
+
+      Each Markdown file should follow this structure:
+      - **Class Name**: The name of the Java class.
+      - **Description**: A brief overview of the class's purpose.
+      - **Functions**: A table listing function names, descriptions, parameters, and return types.
 
 
 #### Example Documentation Files
@@ -72,17 +74,22 @@ Paste the documentation generated into `scripts/AbstractPlayerInteraction.md`, `
 Use Visual Studio Code or Cursor with the Cline extension or Github Copilot (Agent mode) to handle the conversion process.
 
 #### Steps:
-1. **Open the `scripts/` Folder**:
+1. **Copy your existing scripts to the `scripts/` Folder**:
    - Launch Visual Studio Code or Cursor.
-   - Open the `scripts/` folder containing your MapleStory NPC scripts.
+   - Copy to the `scripts/` folder containing your MapleStory NPC scripts.
 
 2. **Configure Cline and MCP**:
    - Ensure the Cline extension is installed in your IDE. (Install)[https://cline.bot/]
    - AI models like `google/gemini-2.5-pro` is greatly recommended, whereas `google/gemini-2.5-flash` for cost efficiency.  You will require an API key for this. 
 
+   <img width="305" height="756" alt="image" src="https://github.com/user-attachments/assets/e2b06320-42c1-4177-a897-ef27e0916a43" />
+   <img width="317" height="557" alt="image" src="https://github.com/user-attachments/assets/9cc8a128-762d-410b-9bef-aac44486149e" />
+
+
+
 ### 3. Use AI Prompts for Conversion
 Cline leverages AI models to automate the conversion of state-based NPC scripts to stateless scripts. 
-You will use predefined prompts stored in the `scripts/prompts/` directory to guide the AI.
+You will use predefined documentation stored in the `scripts/_docs/` directory to guide the AI, along with the prompt.
 
 #### Steps:
 1. **Locate or Create Prompt Files**:
