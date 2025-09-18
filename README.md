@@ -20,14 +20,14 @@ This documentation should be stored in a `scripts/_doc` directory in Markdown fo
    - Navigate to the `scripts/` folder in your MapleStory source.
    - Create a subdirectory named `_doc` (i.e., `scripts/_doc`).
 
-2. **Paste the following classes to an existing AI-chat interface:**:
+2. **Convert your script classes to md documentation:**:
 Using the prompt under `prompts/documentation_prompt.md`
    - `AbstractPlayerInteraction.java`
    - `NPCConversationManager.java`
    - `StatelessNPCConversationInterface.java`
    - `StatelessNPCConversationManager.java`
 
-   Paste the prompts into any AI chat interface, [Grok](https://grok.com/) [Google Gemini](https://gemini.google.com/app) [ChatGPT](https://chatgpt.com/)
+   Paste it into any AI chat interface: [Grok](https://grok.com/) [Google Gemini](https://gemini.google.com/app) [ChatGPT](https://chatgpt.com/)
 
 3. **Documentation Format**:
 
