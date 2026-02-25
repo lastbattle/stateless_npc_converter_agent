@@ -1,9 +1,8 @@
 # Converting State-Based MapleStory NPC Scripts to Stateless Using Agent with Cline or Github Copilot
 
-This guide outlines the process for converting state-based MapleStory NPC scripts to stateless scripts using Agents in Cline in Github Copilot, via Cursor / Visual Studio Code IDE. It includes steps for generating documentation for key Java classes and leveraging AI prompts for automated conversion.
+This guide outlines the process for converting state-based MapleStory NPC scripts to stateless scripts using Agents in Cline or Github Copilot, via Cursor / Visual Studio Code IDE. It includes steps for generating documentation for key Java classes and leveraging AI prompts for automated conversion.
 
 <img width="1776" height="1253" alt="image" src="https://github.com/user-attachments/assets/3d746be9-4580-4ac2-9df1-cdf6b0e25c37" />
-
 
 ## Prerequisites
 - **Development Environment**: Visual Studio Code or Cursor installed.
@@ -21,14 +20,14 @@ This documentation should be stored in a `scripts/_doc` directory in Markdown fo
    - Navigate to the `scripts/` folder in your MapleStory source.
    - Create a subdirectory named `_doc` (i.e., `scripts/_doc`).
 
-2. **Paste the following classes to an existing AI-chat interface:**:
+2. **Convert your script classes to md documentation:**:
 Using the prompt under `prompts/documentation_prompt.md`
    - `AbstractPlayerInteraction.java`
    - `NPCConversationManager.java`
    - `StatelessNPCConversationInterface.java`
    - `StatelessNPCConversationManager.java`
 
-   Paste the prompts into any AI chat interface, [Grok](https://grok.com/) [Google Gemini](https://gemini.google.com/app) [ChatGPT](https://chatgpt.com/)
+   Paste it into any AI chat interface: [Grok](https://grok.com/) [Google Gemini](https://gemini.google.com/app) [ChatGPT](https://chatgpt.com/)
 
 3. **Documentation Format**:
 
@@ -81,7 +80,7 @@ Use Visual Studio Code or Cursor with the Cline extension or Github Copilot (Age
    - Launch Visual Studio Code or Cursor.
    - Copy to the `scripts/` folder containing your MapleStory NPC scripts.
 
-2. **Configure Cline and **:
+2. **Configure Cline **:
    - Ensure the Cline extension is installed in your IDE. (Install)[https://cline.bot/]
    - AI models like `google/gemini-2.5-pro` is greatly recommended, whereas `google/gemini-2.5-flash` for cost efficiency.  You will require an API key for this. 
 
@@ -118,6 +117,10 @@ You will use predefined documentation stored in the `scripts/_docs/` directory t
    - Check the converted script for accuracy and adherence to stateless conventions.
    - Test the script in your MapleStory server to ensure functionality matches the original state-based script.
    - If the AI generates incorrect or incomplete code (e.g., hallucinated functions), adjust the prompt or provide additional examples of manually converted scripts to improve accuracy.
+
+<img width="2113" height="1352" alt="image" src="https://github.com/user-attachments/assets/25b2a3f3-8444-424f-aa4e-b650e386460f" />
+
+
 
 ### 4. Monitor and Iterate
 - **Watch Cline Work**: Cline will read the script files, apply the stateless conversion logic, and may create or edit files in the `scripts/` directory. Monitor the changes in real-time via the IDE's file explorer.
